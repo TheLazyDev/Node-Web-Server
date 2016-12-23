@@ -68,6 +68,12 @@ app.get('/error',(req,res)=>{
 		status: 404
 	})
 })
+
+app.get('/projects',(req,res)=>{
+	res.render('projects.hbs',{
+		pageTitle:"Projects"
+	})
+})
 app.listen(port,()=>{
 	console.log(`Server is up on port ${port}`);
 });
